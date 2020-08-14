@@ -20,6 +20,7 @@ public class ProductController {
     @Autowired
     private ProductService productService;
     @GetMapping("/products")
+    @CrossOrigin
     public ResponseEntity getProducts(){
         List<ProductDto> productDtoList = productService.getProducts();
         return ResponseEntity.ok(productDtoList);

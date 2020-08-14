@@ -8,6 +8,6 @@ import org.springframework.boot.test.context.SpringBootTest;
  */
 @SpringBootTest
 @AutoConfigureMockMvc
-class UserControllerTest {
+class OrderControllerTest {
 
 }
