@@ -14,7 +14,7 @@ import java.util.List;
  */
 @Entity
 @Data
-@Table(name = "order")
+@Table(name = "productOrder")
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
@@ -24,6 +24,6 @@ public class OrderDto {
     private int id;
     private String orderName;
     private String orderPrice;
-    private int num;
+    private int number;
     private String unit;
 }
