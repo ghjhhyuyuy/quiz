@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    url: "jdbc:mysql://localhost:3306/Quiz?serverTimezone=GMT&useUnicode=true&characterEncoding=UTF-8"
+    username: ""
+    password: ""
+  jpa:
+    hibernate:
+      ddl-auto: create
