@@ -4,6 +4,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
-public class RsController {
+public class OrderController {
 
 }

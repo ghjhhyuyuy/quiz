@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
  * Created by wzw on 2020/8/5.
  */
 @RestController
-public class UserController {
-    Logger logger = LoggerFactory.getLogger(UserController.class);
+public class ProductController {
+    Logger logger = LoggerFactory.getLogger(ProductController.class);
 
 }
