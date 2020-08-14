@@ -26,7 +26,7 @@ class ProductControllerTests {
 
     @BeforeEach
     void setUp() {
-        productDto = ProductDto.builder().imgUrl("/img/apple.img").price(100).productName("apple").unit("箱").build();
+        productDto = ProductDto.builder().imgUrl("/img/apple.img").price(100.00).productName("apple").unit("箱").build();
         productDto = productRepository.save(productDto);
     }
 
@@ -35,7 +35,7 @@ class ProductControllerTests {
     void should_return_product_list() throws Exception {
         mockMvc.perform(get("/products")).andExpect(jsonPath("$", hasSize(1)))
                 .andExpect(jsonPath("$[0].imgUrl", is("/img/apple.img")))
-                .andExpect(jsonPath("$[0].price", is(100)))
+                .andExpect(jsonPath("$[0].price", is(100.00)))
                 .andExpect(jsonPath("$[0].productName", is("apple")))
                 .andExpect(jsonPath("$[0].unit", is("箱")))
                 .andExpect(status().isOk());
